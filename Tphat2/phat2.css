@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    color: #333;
+    width: 95%;
+    margin: auto;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.3);
+}
+.back{
+    background-color: rgba(0, 103, 167, 0.845);
+    padding: 15px;
+    
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            background-color: rgba(2, 113, 135, 0.391);
+            text-shadow: 0.1rem 0.1rem 0.2rem black;
+            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem black;
+            padding: 0.5rem;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            border-radius: 0.3rem;
+        }
+}
+/*************************/
+/*************************/
+.boxT1{
+    padding: 2.5vw;
+    background-color: rgb(0, 179, 255);
+}
+.boxT2{
+    padding: 2.5vw;
+    box-shadow: 0.2rem 0.2rem 0.9rem 0.9rem rgba(0,0,0,0.3);
+}
+
+/*************************/
+/*************************/
+.boxT3{
+    background-color: #333;
+    .box_img{
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        height: 30vw;
+        box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.3);
+        overflow-x: auto;
+    }
+    img{
+        width: 50vw;
+        object-fit: cover;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+}
+/*************************/
+/*************************/
+@media (max-width: 650px) {
+    .boxT4{
+        flex-direction: column;
+    }
+}
+.boxT4{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+    ul{
+        padding: 2rem;
+    }
+}
+/*************************/

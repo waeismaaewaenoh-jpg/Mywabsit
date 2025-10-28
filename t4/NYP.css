@@ -1,0 +1,136 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        max-width: auto;
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    /**/
+    .box1{
+        width: 100%;
+        padding: 1rem;
+        background-color: aqua;
+        
+    }
+    /**/
+    /**/
+    .but{
+        color: white;
+        margin-bottom: 1rem;
+        a{
+            background-color: rgb(0, 0, 0);
+            padding: 0.3rem;
+            border-radius: 0.5rem;
+            color: white;
+            padding: 0.5rem;
+        }
+    }
+    .text-1{
+        padding: 1rem;
+        box-shadow: 0 0 20px 0 black;
+        border-radius: 1rem;
+        width: 90%;
+        background-color: aquamarine;
+        align-items: center;
+        text-align: center;
+        
+        margin: 0 auto;
+        h3{
+            margin-top: 0.5rem;
+            font-size: calc(24px + 0.5vw);
+        }
+        h4   {
+            margin-top: 0.5rem;
+            font-size: calc(24px + 0.5vw);
+        }
+    }
+
+    /***************/
+    /***************/
+    /***************/
+    /***************/
+       .box3{
+    text-align: center;
+    place-items: center;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: calc(10px + 1vw);
+    font-weight: bold;
+}
+ .container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 3fr); /* มือถือ: 2 คอลัมน์ */
+    gap: 10px;
+    width: 100%;
+    max-width: 100%; /* จำกัดความกว้าง */
+    padding: 10px;
+    z-index: 0;
+  }
+
+  /* 💻 ถ้าหน้าจอกว้างเกิน 600px (โน้ตบุ๊กขึ้นไป) ให้แสดง 3 คอลัมน์ */
+  @media (min-width: 600px) {
+    .container {
+        max-width: 100%; /* จำกัดความกว้าง */
+        height: 100%;
+        place-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 2rem;
+        grid-template-columns: repeat(3, 3fr);
+    }
+    .box {
+        margin: 1rem;
+        height: 40vw;
+        width: 20vw;
+    }
+  }
+
+  .box {
+    background: #4e89ff;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 1rem;
+    height: 20rem;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    position: relative; /* เพื่อให้จัดวาง p ภายใน */
+  }
+   .box p {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: calc(15px + 0.5vw);
+    background: rgba(0, 0, 0, 0.69); /* พื้นหลังใสๆ */
+    margin: 0;
+    padding: 2px;
+    padding-top: 1rem;
+    height: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+    /* ถ้ามีภาพ */
+  .box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    display: block;
+    object-fit: cover; /* เต็มกล่อง */
+  }
+/****************************************/
+
